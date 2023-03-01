@@ -1,0 +1,51 @@
+version: '3'
+services:
+  server:
+    build:
+      context: .
+    image: aviata-server:latest
+    environment:
+      MONGO_DB_URL: 'mongodb://aviata:aviatapass@mongodb:27017'
+      PROVIDERS_URLS: 'http://provider-a:9001/search,http://provider-b:9002/search'
+      CURRENCY_RATES_URL: 'https://www.nationalbank.kz/rss/get_rates.cfm'
+    ports:
+      - 9000:9000
+    depends_on:
+      - mongodb
+      - provider-a
+      - provider-b
+
+  provider-a:
+    build:
+      context: ./providers
+    image: provider-server:latest
+    environment:
+      PORT: 9001
+      FILE: 'response_a.xml'
+      DELAY: 30
+    container_name: provider-a
+    command: "python3 provider.py"
+
+  provider-b:
+    build:
+      context: ./providers
+    image: provider-server:latest
+    environment:
+      PORT: 9002
+      FILE: 'response_b.xml'
+      DELAY: 60
+    container_name: provider-b
+    command: "python3 provider.py"
+
+  mongodb:
+    image: mongodb/mongodb-community-server:6.0-ubi8
+    container_name: mongodb
+    environment:
+      - MONGODB_INITDB_ROOT_USERNAME=aviata
+      - MONGODB_INITDB_ROOT_PASSWORD=aviatapass
+    ports:
+      - 27017:27017
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data/db

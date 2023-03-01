@@ -1,0 +1,1424 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <OTA_AirLowFareSearchRS xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="5.2.0" PricedItinCount="10" BrandedOneWayItinCount="0" SimpleOneWayItinCount="0" DepartedItinCount="0" SoldOutItinCount="0" AvailableItinCount="0">
+            <Success />
+            <Warnings>
+                <Warning Type="WORKERTHREAD" Code="TRANSACTIONID" MessageClass="I" ShortText="4560724761605810333" />
+                <Warning Type="SERVER" Code="ASE032LPSCIL592.ATSE.CERT.ASCINT.SABRECIRRUS.COM" MessageClass="I" ShortText="27031" />
+                <Warning Type="DRE" Code="RULEID" MessageClass="I" ShortText="21764" />
+                <Warning Type="DEFAULT" Code="RULEID" MessageClass="I" ShortText="25238" />
+            </Warnings>
+            <PricedItineraries>
+                <PricedItinerary SequenceNumber="1">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T05:40:00" ArrivalDateTime="2021-11-12T07:15:00" StopQuantity="0" FlightNumber="703" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="703" />
+                                    <Equipment AirEquipType="733" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T08:15:00" ArrivalDateTime="2021-11-13T09:50:00" StopQuantity="0" FlightNumber="704" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="704" />
+                                    <Equipment AirEquipType="733" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="HPIS" FareReturned="true" LastTicketDate="2021-11-12">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="UJ" Amount="960.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YR" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="12919.8" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="2">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T05:40:00" ArrivalDateTime="2021-11-12T07:15:00" StopQuantity="0" FlightNumber="703" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="703" />
+                                    <Equipment AirEquipType="733" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T14:30:00" ArrivalDateTime="2021-11-13T16:05:00" StopQuantity="0" FlightNumber="714" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="714" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="HPIS" FareReturned="true" LastTicketDate="2021-11-12">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="UJ" Amount="960.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YR" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="12919.8" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="3">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T05:40:00" ArrivalDateTime="2021-11-12T07:15:00" StopQuantity="0" FlightNumber="703" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="703" />
+                                    <Equipment AirEquipType="733" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="85" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T22:30:00" ArrivalDateTime="2021-11-13T23:55:00" StopQuantity="0" FlightNumber="724" ResBookDesigCode="A" ElapsedTime="85">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="724" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="HPIS" FareReturned="true" LastTicketDate="2021-11-12">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="UJ" Amount="960.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YR" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="9145.17" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="4">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T12:00:00" ArrivalDateTime="2021-11-12T13:35:00" StopQuantity="0" FlightNumber="713" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="713" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T08:15:00" ArrivalDateTime="2021-11-13T09:50:00" StopQuantity="0" FlightNumber="704" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="704" />
+                                    <Equipment AirEquipType="733" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="MIP" FareReturned="true">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="UJ" Amount="960" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YRI" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="12919.8" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="5">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T12:00:00" ArrivalDateTime="2021-11-12T13:35:00" StopQuantity="0" FlightNumber="713" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="713" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T14:30:00" ArrivalDateTime="2021-11-13T16:05:00" StopQuantity="0" FlightNumber="714" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="714" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="HPIS" FareReturned="true" LastTicketDate="2021-11-12">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="UJ" Amount="960.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YR" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="12919.8" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="6">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T12:00:00" ArrivalDateTime="2021-11-12T13:35:00" StopQuantity="0" FlightNumber="713" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="713" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="85" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T22:30:00" ArrivalDateTime="2021-11-13T23:55:00" StopQuantity="0" FlightNumber="724" ResBookDesigCode="A" ElapsedTime="85">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="724" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="HPIS" FareReturned="true" LastTicketDate="2021-11-12">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="UJ" Amount="960.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YR" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="12033.1" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="7">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="90" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T20:00:00" ArrivalDateTime="2021-11-12T21:30:00" StopQuantity="0" FlightNumber="723" ResBookDesigCode="A" ElapsedTime="90">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="723" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T08:15:00" ArrivalDateTime="2021-11-13T09:50:00" StopQuantity="0" FlightNumber="704" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="704" />
+                                    <Equipment AirEquipType="733" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="MIP" FareReturned="true">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="UJ" Amount="960" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YRI" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="12488.4" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="8">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="90" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T20:00:00" ArrivalDateTime="2021-11-12T21:30:00" StopQuantity="0" FlightNumber="723" ResBookDesigCode="A" ElapsedTime="90">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="723" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="95" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T14:30:00" ArrivalDateTime="2021-11-13T16:05:00" StopQuantity="0" FlightNumber="714" ResBookDesigCode="A" ElapsedTime="95">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="714" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="MIP" FareReturned="true">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="UJ" Amount="960" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YRI" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153" CurrencyCode="KZT" DecimalPlaces="0" CountryCode="KZ" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="12488.4" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="9">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="90" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T20:00:00" ArrivalDateTime="2021-11-12T21:30:00" StopQuantity="0" FlightNumber="723" ResBookDesigCode="A" ElapsedTime="90">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" />
+                                    <OperatingAirline Code="DV" FlightNumber="723" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="85" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T22:30:00" ArrivalDateTime="2021-11-13T23:55:00" StopQuantity="0" FlightNumber="724" ResBookDesigCode="A" ElapsedTime="85">
+                                    <DepartureAirport LocationCode="NQZ" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="DV" FlightNumber="724" />
+                                    <Equipment AirEquipType="738" />
+                                    <MarketingAirline Code="DV" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                        <Message Type="FMT" Text="*DV SUBJECT TO EU BAN. HTTP://TINYURL.COM/AIR-BAN-EU/" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="HPIS" FareReturned="true" LastTicketDate="2021-11-12">
+                        <ItinTotalFare>
+                            <BaseFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="19253" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                    <FareBasisCode BookingCode="A" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XES" FareComponentFareTariff="302" FareComponentFareRule="V204" GovCarrier="DV">ASO</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="12000" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="12000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="UJ" Amount="960.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="1193.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YRI" Amount="2550" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="2153.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YR" Amount="5100" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TotalTax Amount="7253" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="19253" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="DV">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA DV NQZ6000DV ALA6000KZT12000END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>A</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>A</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="DV" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="DV" />
+                        <DiversitySwapper WeighedPriceAmount="5775.9" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+                <PricedItinerary SequenceNumber="10">
+                    <AirItinerary DirectionInd="Return">
+                        <OriginDestinationOptions>
+                            <OriginDestinationOption ElapsedTime="105" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-12T06:10:00" ArrivalDateTime="2021-11-12T07:55:00" StopQuantity="0" FlightNumber="951" ResBookDesigCode="Y" ElapsedTime="105">
+                                    <DepartureAirport LocationCode="ALA" />
+                                    <ArrivalAirport LocationCode="NQZ" TerminalID="2" />
+                                    <OperatingAirline Code="KC" FlightNumber="951" />
+                                    <Equipment AirEquipType="321" />
+                                    <MarketingAirline Code="KC" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                            <OriginDestinationOption ElapsedTime="100" DepartureCountry="KZ" ArrivalCountry="KZ">
+                                <FlightSegment DepartureDateTime="2021-11-13T08:55:00" ArrivalDateTime="2021-11-13T10:35:00" StopQuantity="0" FlightNumber="952" ResBookDesigCode="Y" ElapsedTime="100">
+                                    <DepartureAirport LocationCode="NQZ" TerminalID="2" />
+                                    <ArrivalAirport LocationCode="ALA" />
+                                    <OperatingAirline Code="KC" FlightNumber="952" />
+                                    <Equipment AirEquipType="321" />
+                                    <MarketingAirline Code="KC" />
+                                    <MarriageGrp>O</MarriageGrp>
+                                    <DepartureTimeZone GMTOffset="6" />
+                                    <ArrivalTimeZone GMTOffset="6" />
+                                    <TPA_Extensions>
+                                        <eTicket Ind="true" />
+                                        <Mileage Amount="602" />
+                                    </TPA_Extensions>
+                                </FlightSegment>
+                            </OriginDestinationOption>
+                        </OriginDestinationOptions>
+                    </AirItinerary>
+                    <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="HPIS" FareReturned="true" LastTicketDate="2021-11-12">
+                        <ItinTotalFare>
+                            <BaseFare Amount="85570" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <FareConstruction Amount="85570" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <EquivFare Amount="85570" CurrencyCode="KZT" DecimalPlaces="0" />
+                            <Taxes>
+                                <Tax TaxCode="TOTALTAX" Amount="9218" CurrencyCode="KZT" DecimalPlaces="0" />
+                            </Taxes>
+                            <TotalFare Amount="94788" CurrencyCode="KZT" DecimalPlaces="0" />
+                        </ItinTotalFare>
+                        <PTC_FareBreakdowns>
+                            <PTC_FareBreakdown>
+                                <PassengerTypeQuantity Code="ADT" Quantity="1" />
+                                <FareBasisCodes>
+                                    <FareBasisCode BookingCode="Y" AvailabilityBreak="true" DepartureAirportCode="ALA" ArrivalAirportCode="NQZ" FareComponentBeginAirport="ALA" FareComponentEndAirport="NQZ" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XPX" FareComponentFareTariff="302" FareComponentFareRule="KCSS" GovCarrier="KC">YSSKZ</FareBasisCode>
+                                    <FareBasisCode BookingCode="Y" AvailabilityBreak="true" DepartureAirportCode="NQZ" ArrivalAirportCode="ALA" FareComponentBeginAirport="NQZ" FareComponentEndAirport="ALA" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" FareComponentFareTypeBitmap="00" FareComponentFareType="XPX" FareComponentFareTariff="302" FareComponentFareRule="KCSS" GovCarrier="KC">YSSKZ</FareBasisCode>
+                                </FareBasisCodes>
+                                <PassengerFare>
+                                    <BaseFare Amount="85570" CurrencyCode="KZT" />
+                                    <FareConstruction Amount="85570" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <EquivFare Amount="85570" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    <Taxes>
+                                        <Tax TaxCode="UJ" Amount="406.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="UJ" Amount="812.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <Tax TaxCode="YQF" Amount="4000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <Tax TaxCode="YQF" Amount="4000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TaxSummary TaxCode="UJ" Amount="1218.00" CurrencyCode="KZT" DecimalPlaces="2" CountryCode="KZ" />
+                                        <TaxSummary TaxCode="YQ" Amount="8000" CurrencyCode="KZT" DecimalPlaces="0" />
+                                        <TotalTax Amount="9218" CurrencyCode="KZT" DecimalPlaces="0" />
+                                    </Taxes>
+                                    <TotalFare Amount="94788" CurrencyCode="KZT" />
+                                    <TPA_Extensions>
+                                        <BaggageInformationList>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="KC">
+                                                <Segment Id="0" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                            <BaggageInformation ProvisionType="A" AirlineCode="KC">
+                                                <Segment Id="1" />
+                                                <Allowance Pieces="0" />
+                                            </BaggageInformation>
+                                        </BaggageInformationList>
+                                    </TPA_Extensions>
+                                </PassengerFare>
+                                <Endorsements NonRefundableIndicator="true" />
+                                <TPA_Extensions>
+                                    <FareCalcLine Info="ALA KC NQZ42785KC ALA42785KZT85570END" />
+                                </TPA_Extensions>
+                                <FareInfos>
+                                    <FareInfo>
+                                        <FareReference>Y</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                    <FareInfo>
+                                        <FareReference>Y</FareReference>
+                                        <TPA_Extensions>
+                                            <SeatsRemaining Number="9" BelowMin="false" />
+                                            <Cabin Cabin="Y" />
+                                            <Meal Code="M" />
+                                        </TPA_Extensions>
+                                    </FareInfo>
+                                </FareInfos>
+                            </PTC_FareBreakdown>
+                        </PTC_FareBreakdowns>
+                        <FareInfos>
+                            <FareInfo>
+                                <FareReference>Y</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                            <FareInfo>
+                                <FareReference>Y</FareReference>
+                                <TPA_Extensions>
+                                    <SeatsRemaining Number="9" BelowMin="false" />
+                                    <Cabin Cabin="Y" />
+                                    <Meal Code="M" />
+                                </TPA_Extensions>
+                            </FareInfo>
+                        </FareInfos>
+                        <TPA_Extensions>
+                            <DivideInParty Indicator="false" />
+                            <ValidatingCarrier SettlementMethod="BSP" NewVcxProcess="true">
+                                <Default Code="KC" />
+                            </ValidatingCarrier>
+                            <ValidatingCarrier SettlementMethod="GEN" NewVcxProcess="true">
+                                <Default Code="KC" />
+                            </ValidatingCarrier>
+                        </TPA_Extensions>
+                    </AirItineraryPricingInfo>
+                    <TicketingInfo TicketType="eTicket" ValidInterline="Yes" />
+                    <TPA_Extensions>
+                        <ValidatingCarrier Code="KC" />
+                        <DiversitySwapper WeighedPriceAmount="40920.7" />
+                    </TPA_Extensions>
+                </PricedItinerary>
+            </PricedItineraries>
+        </OTA_AirLowFareSearchRS>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
