@@ -1,6 +1,6 @@
 version: '3'
 services:
-  server:
+  airflow:
     build:
       context: .
     image: aviata-server:latest
@@ -10,6 +10,7 @@ services:
       CURRENCY_RATES_URL: 'https://www.nationalbank.kz/rss/get_rates.cfm'
     ports:
       - 9000:9000
+    container_name: airflow
     depends_on:
       - mongodb
       - provider-a
@@ -24,6 +25,8 @@ services:
       FILE: 'response_a.xml'
       DELAY: 30
     container_name: provider-a
+    ports:
+      - 9001:9001
     command: "python3 provider.py"
 
   provider-b:
@@ -35,6 +38,8 @@ services:
       FILE: 'response_b.xml'
       DELAY: 60
     container_name: provider-b
+    ports:
+      - 9002:9002
     command: "python3 provider.py"
 
   mongodb:

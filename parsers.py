@@ -84,7 +84,6 @@ async def parse_a_response(response):
 
 
 async def parse_b_response(response):
-    print('start')
 
     def get_first_element_or_none(tree, query):
         elements = tree.xpath(f'.//*[contains(local-name(), "{query}")]')

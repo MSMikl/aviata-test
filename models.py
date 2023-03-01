@@ -35,11 +35,16 @@ class Currency(Enum):
     KZT = 'KZT'
 
 
-def convert(value, rate):
-    return str(int(Decimal(value) * 100 * rate)/100)
-
-
 class Price(BaseModel):
+    dec_amount: float = Field(
+        default=None,
+        exclude=True,
+    )
+    amount: str = ''
+    currency: Currency | None
+
+
+class Pricing(BaseModel):
     total: str
     base: str
     taxes: str
@@ -52,20 +57,13 @@ class Price(BaseModel):
         )
         return loaded_dict
 
-    def change_currency(self, currency='KZT', rate=1):
-        if currency == self.currency.value:
-            return
-        self.total = convert(self.total, rate)
-        self.base = convert(self.base, rate)
-        self.taxes = convert(self.taxes, rate)
-        self.currency = Currency(currency)
-
 
 class Variant(BaseModel):
     flights: list[Flight]
     refundable: bool
     validating_airline: str
-    pricing: Price
+    pricing: Pricing
+    price: Price = Price(dec_amount=None, amount='', currency=None)
 
 
 class SearchStatus(Enum):

@@ -68,14 +68,18 @@ async def get_results(search_id, currency='KZT'):
         raise HTTPException(404, detail='search_id not found')
     rates = await COLLECTION.find_one({'_id': 'rates'})
     for variant in search.items:
+        variant.price.currency = Currency(currency)
         if currency == variant.pricing.currency.value:
+            variant.price.amount = variant.pricing.total
+            variant.price.dec_amount = Decimal(variant.price.amount)
             continue
         if currency == 'KZT':
             rate = Decimal(rates.get(variant.pricing.currency.value))
         else:
             rate = Decimal(rates.get(variant.pricing.currency.value))/Decimal(rates.get(currency))
-        variant.pricing.change_currency(currency, rate)
-    search.items.sort(key=lambda x: Decimal(x.pricing.total))
+        variant.price.dec_amount = (Decimal(variant.pricing.total) * rate)
+        variant.price.amount = f"{variant.price.dec_amount:.2f}"
+    search.items.sort(key=lambda x: x.price.dec_amount)
     return search
 
 
