@@ -1,8 +1,16 @@
-from environs import Env
+from pydantic import BaseSettings
 
-env = Env()
-env.read_env()
 
-MONGO_DB_URL = env('MONGO_DB_URL')
-PROVIDERS_URLS = env.list('PROVIDERS_URLS', [])
-CURRENCY_RATES_URL = env('CURRENCY_RATES_URL', '')
+class Env(BaseSettings):
+    MONGO_DB_URL: str
+    PROVIDERS_URLS: list[str] = list()
+    CURRENCY_RATES_URL: str = ''
+
+    class Config:
+        env_file = '.env'
+        env_file_encoding = 'utf-8'
+        case_sensitive = True
+        env_nested_delimiter = '__'
+
+
+ENV = Env()

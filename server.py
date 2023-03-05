@@ -7,6 +7,8 @@ import settings
 
 from datetime import date
 from decimal import Decimal
+from typing import Callable
+
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from fastapi import FastAPI, HTTPException
@@ -44,7 +46,7 @@ async def get_rates():
     '''Get fresh exchange rates'''
     async with aiohttp.ClientSession() as session:
         response = await session.get(
-            url=settings.CURRENCY_RATES_URL,
+            url=settings.ENV.CURRENCY_RATES_URL,
             params={
                 'fdate': date.today().strftime('%d.%m.%Y')
             }
@@ -66,7 +68,7 @@ async def get_rates():
 
 
 @app.get("/results/{search_id}/{currency}", response_model=Search, response_model_by_alias=False)
-async def get_results(search_id, currency='KZT'):
+async def get_results(search_id: str, currency: str = 'KZT') -> Search:
     cache_key = f"{search_id}:{currency}"
     response_cache = await app.extra['cache'].get(cache_key)
     if response_cache:
@@ -97,7 +99,7 @@ async def get_results(search_id, currency='KZT'):
     return search
 
 
-async def request_and_parse(url, parser, search_id):
+async def request_and_parse(url: str, parser: Callable, search_id: str):
     async with aiohttp.ClientSession() as session:
         response = await session.post(url)
         response.raise_for_status()
@@ -105,11 +107,11 @@ async def request_and_parse(url, parser, search_id):
     await COLLECTION.update_one({'_id': search_id}, {'$push': {'items': {'$each' : results}}})
 
 
-async def update_search(search_id):
+async def update_search(search_id: str):
     try:
         async with asyncio.TaskGroup() as tg:
-            tg.create_task(request_and_parse(settings.PROVIDERS_URLS[0], parse_a_response, search_id))
-            tg.create_task(request_and_parse(settings.PROVIDERS_URLS[1], parse_b_response, search_id))
+            tg.create_task(request_and_parse(settings.ENV.PROVIDERS_URLS[0], parse_a_response, search_id))
+            tg.create_task(request_and_parse(settings.ENV.PROVIDERS_URLS[1], parse_b_response, search_id))
     finally:
         await COLLECTION.update_one({'_id': search_id}, {'$set': {'status': 'COMPLETED'}})
 

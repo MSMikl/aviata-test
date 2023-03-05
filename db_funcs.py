@@ -9,10 +9,10 @@ from pydantic import parse_obj_as
 from models import Search
 
 
-COLLECTION = motor.motor_asyncio.AsyncIOMotorClient(settings.MONGO_DB_URL).aviata.searches
+COLLECTION = motor.motor_asyncio.AsyncIOMotorClient(settings.ENV.MONGO_DB_URL).aviata.searches
 
 
-async def get_results_by_id(id):
+async def get_results_by_id(id: str) -> Search:
     awaiting_result = COLLECTION.find_one({'_id': id})
     result = await awaiting_result
     if not result:
@@ -21,7 +21,7 @@ async def get_results_by_id(id):
     return search
 
 
-async def create_search():
+async def create_search() -> Search:
     search = Search(search_id=uuid.uuid4().__str__())
     decoded = search.dict(by_alias=True)
     await COLLECTION.insert_one(decoded)

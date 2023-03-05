@@ -6,14 +6,19 @@ from collections import defaultdict
 from datetime import datetime
 
 
-async def parse_a_response(response):
+async def parse_a_response(response: str) -> list[dict]:
 
     namespaces = {
         'a': "http://schemas.datacontract.org/2004/07/SiteCity.Avia.Search",
         'b': "http://schemas.datacontract.org/2004/07/SiteCity.Avia.Common.Avia",
     }
 
-    def find_text_or_default(element, query, namespaces=namespaces, default=None):
+    def find_text_or_default(
+        element: lxml.etree.Element,
+        query: str,
+        namespaces: dict = namespaces,
+        default=None
+    ) -> str:
         result = element.xpath(query, namespaces=namespaces)
         if not result:
             return default
@@ -77,13 +82,13 @@ async def parse_a_response(response):
     return result
 
 
-async def parse_b_response(response):
+async def parse_b_response(response: str) -> list[dict]:
 
-    def get_first_element_or_none(tree, query):
+    def get_first_element_or_none(tree: lxml.etree.ElementTree, query: str) -> lxml.etree.Element:
         elements = tree.xpath(f'.//*[contains(local-name(), "{query}")]')
         if elements:
             return elements[0]
-        return {}
+        return lxml.etree.Element('empty')
 
     tree = lxml.etree.fromstring(response).xpath('.//*[contains(local-name(), "Body")]')[0]
 

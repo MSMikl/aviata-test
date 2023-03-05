@@ -6,7 +6,7 @@ services:
     image: aviata-server:latest
     environment:
       MONGO_DB_URL: 'mongodb://aviata:aviatapass@mongodb:27017'
-      PROVIDERS_URLS: 'http://provider-a:9001/search,http://provider-b:9002/search'
+      PROVIDERS_URLS: '["http://provider-a:9001/search", "http://provider-b:9002/search"]'
       CURRENCY_RATES_URL: 'https://www.nationalbank.kz/rss/get_rates.cfm'
     ports:
       - 9000:9000
