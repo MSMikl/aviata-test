@@ -3,13 +3,7 @@ import json
 import lxml.etree
 
 from collections import defaultdict
-from decimal import Decimal
 from datetime import datetime
-from pprint import pprint
-
-from pydantic import parse_obj_as
-
-from models import Search, Variant, Segment, AirportTime
 
 
 async def parse_a_response(response):

@@ -10,14 +10,16 @@ from decimal import Decimal
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from fastapi import FastAPI, HTTPException
+from fastapi_cache import close_caches
+from fastapi_cache.backends.memory import InMemoryCacheBackend
 
 from db_funcs import get_results_by_id, create_search, COLLECTION
-from models import Search, Currency
+from models import Search, Currency, SearchStatus
 from parsers import parse_a_response, parse_b_response
 
 
 app = FastAPI()
-
+app.extra['cache'] = InMemoryCacheBackend()
 
 @app.on_event('startup')
 async def launch_scheduler():
@@ -31,6 +33,11 @@ async def launch_scheduler():
         get_rates,
     )
     scheduler.start()
+
+
+@app.on_event("shutdown")
+async def on_shutdown():
+    await close_caches()
 
 
 async def get_rates():
@@ -60,6 +67,11 @@ async def get_rates():
 
 @app.get("/results/{search_id}/{currency}", response_model=Search, response_model_by_alias=False)
 async def get_results(search_id, currency='KZT'):
+    cache_key = f"{search_id}:{currency}"
+    response_cache = await app.extra['cache'].get(cache_key)
+    if response_cache:
+        print('using cache')
+        return response_cache
     currencies = [element.value for element in Currency]
     if currency not in currencies:
         raise HTTPException(422, detail='Incorrect currency code')
@@ -80,6 +92,8 @@ async def get_results(search_id, currency='KZT'):
         variant.price.dec_amount = (Decimal(variant.pricing.total) * rate)
         variant.price.amount = f"{variant.price.dec_amount:.2f}"
     search.items.sort(key=lambda x: x.price.dec_amount)
+    if search.status == SearchStatus.COMPLETED:
+        await app.extra['cache'].set(cache_key, search, ttl=3600)
     return search
 
 
